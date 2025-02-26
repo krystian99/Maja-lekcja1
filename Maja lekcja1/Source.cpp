@@ -6,25 +6,25 @@ using namespace std;
 
 int main()
 {
-	int n; // wczytana liczba
+	int n;
 
-	cin >> n; // wczyczuje liczbe do zmiennej n
+	cout << " Podaj ilosc liczb calkowitych ";
+	cin >> n;
+	
+	cout << "Wypisuje wczytana liczbe: " << n << endl;
+
+	int tab[5] = {};
+
+	tab[2] = 12;
+	tab[3] = 8;
+
+	// wyswietlanie pojedynczo
+	cout << tab[1] << endl;
+	cout << tab[2] << endl;
 
 	for (int i = 0; i < n; ++i)
 	{
-		cout << i << endl;
-	}
-
-	cout << "Wyswietlam liczby od 2 do 9 wlacznie, czyli <2; 9>" << endl;
-	for (int i = 2; i <= 9; ++i)
-	{
-		cout << i << endl;
-	}
-
-	cout << "Wyswietlam liczby <2; 9)" << endl;
-	for (int i = 2; i < 9; ++i)
-	{
-		cout << i << endl;
+		cout << tab[i] << endl;
 	}
 
 	return 0;
