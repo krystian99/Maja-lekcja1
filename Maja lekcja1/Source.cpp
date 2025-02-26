@@ -27,5 +27,11 @@ int main()
 	{
 		cout << tab[i] << " ";
 	}
+
+	// zmieniam jeden z elementow i wyswietlam go
+	tab[0] = 123124;
+
+	cout << tab[0];
+
 	return 0;
 }
