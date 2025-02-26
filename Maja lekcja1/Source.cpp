@@ -2,24 +2,30 @@
 
 using namespace std;
 
+// Zrob program ktory po wczytaniu liczby n wyswietli wszystkie liczby wczytane na ekran
+
 int main()
 {
-	cout << "Jestem Krystian. Jestem korepetytorem z informatyki i matematyki" << endl;
+	int n; // wczytana liczba
 
-	int n; // liczba calkowita o nazwie n
-	double x; // liczba zmiennoprzecinkowa(z przecinkami, np. 2,45)
+	cin >> n; // wczyczuje liczbe do zmiennej n
 
+	for (int i = 0; i < n; ++i)
+	{
+		cout << i << endl;
+	}
 
-	cout << "Podaj liczbe do wczytania: ";
-	cin >> n; // wczytywanie danych do zmiennej n
-	cout << "Wyswietlam wczytana liczbe: " << n;
+	cout << "Wyswietlam liczby od 2 do 9 wlacznie, czyli <2; 9>" << endl;
+	for (int i = 2; i <= 9; ++i)
+	{
+		cout << i << endl;
+	}
 
-	cout << "Wyswietlam wczytana liczbe pomniejszona o 2: " << n - 2 << endl;
-
-	cout << "Wyswietlam wczytana liczbe podzielona na 2: " << n / 2 << endl;
-	cout << "Wyswietlam wczytana liczbe n pomnozona przez 5: " << n * 5 << endl;
-	
-	cout << "Wyswietlam n + 5" << n + 5 << endl;
+	cout << "Wyswietlam liczby <2; 9)" << endl;
+	for (int i = 2; i < 9; ++i)
+	{
+		cout << i << endl;
+	}
 
 	return 0;
 }
