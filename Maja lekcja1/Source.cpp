@@ -4,28 +4,28 @@ using namespace std;
 
 // Zrob program ktory po wczytaniu liczby n wyswietli wszystkie liczby wczytane na ekran
 
+const int N = 1001; // maksymalna liczba elementów
+
 int main()
 {
 	int n;
 
 	cout << " Podaj ilosc liczb calkowitych ";
 	cin >> n;
-	
-	cout << "Wypisuje wczytana liczbe: " << n << endl;
 
-	int tab[5] = {};
+	int tab[N] = {};
 
-	tab[2] = 12;
-	tab[3] = 8;
+	// wczytywanie danych do tablicy
+	for (int i = 0; i < n; ++i)
+	{
+		cin >> tab[i];
+	}
 
-	// wyswietlanie pojedynczo
-	cout << tab[1] << endl;
-	cout << tab[2] << endl;
+	// wyswietlanie elementow tablicy
 
 	for (int i = 0; i < n; ++i)
 	{
-		cout << tab[i] << endl;
+		cout << tab[i] << " ";
 	}
-
 	return 0;
 }
