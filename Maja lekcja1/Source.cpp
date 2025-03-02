@@ -9,27 +9,19 @@ int tab[MAX];
 
 int main()
 {
-	int n; //deklaracja liczby calkowitej
-	cout << "Podaj ilosc liczb calkowitych ";
+	int n;
+	cout << "Podaj ilosc liczb calkowitych";
 	cin >> n;
-	//int tab[n];
-
-	// wczytanie do tablicy
-	for (int i = 0; i < n; ++i)
+	//int tab[n]
+	for (int i = 0;i < n; ++i)
 	{
 		cin >> tab[i];
 	}
-
-	// petla for, klamry, kolejne kroki petli
-
-	for(int i= 0; i < n; ++i)
+	for(int i=0; i <n; ++i)
 	{
-		cout << tab[i] << endl;
+		cout << tab[i] << " ";
 	}
 
-
-
-	tab[0]=123456;
 
 	return 0;
 }
