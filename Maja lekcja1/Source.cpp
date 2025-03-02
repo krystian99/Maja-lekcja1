@@ -1,4 +1,5 @@
 #include <iostream>
+#include <cstdlib> // biblioteka do losowania liczb
 
 using namespace std;
 
@@ -10,28 +11,26 @@ int main()
 {
 	int n;
 
-	cout << " Podaj ilosc liczb calkowitych ";
-	cin >> n;
 
-	int tab[N] = {};
+	srand(time(0)); // generator maszyny losuj¹cej
+	int a = rand(); // funkcja rand
+	
+	// petla for, uzycie funkcji rand(), wypisanie po spacjif
 
-	// wczytywanie danych do tablicy
-	for (int i = 0; i < n; ++i)
-	{
-		cin >> tab[i];
-	}
-
-	// wyswietlanie elementow tablicy
+	// petfla for, klamry
 
 	for (int i = 0; i < n; ++i)
 	{
-		cout << tab[i] << " ";
+		int a = rand();
+		cout << a << endl;
 	}
+
+
 
 	// zmieniam jeden z elementow i wyswietlam go
-	tab[0] = 123124;
+	//tab[0] = 123124;
 
-	cout << tab[0];
+	//cout << tab[0];
 
 	return 0;
 }
