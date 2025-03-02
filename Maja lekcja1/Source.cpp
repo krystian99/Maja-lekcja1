@@ -1,5 +1,4 @@
 #include <iostream>
-#include <cstdlib> // biblioteka do losowania liczb
 
 using namespace std;
 
@@ -10,27 +9,27 @@ const int N = 1001; // maksymalna liczba elementów
 int main()
 {
 	int n;
+	cin >> n;
 
+	int tab[N] = {};
 
-	srand(time(0)); // generator maszyny losuj¹cej
-	int a = rand(); // funkcja rand
-	
-	// petla for, uzycie funkcji rand(), wypisanie po spacjif
+	// wczytywanie danych do tablicy
+	for (int i = 0; i < n; ++i)
+	{
+		cin >> tab[i];
+	}
 
-	// petfla for, klamry
+	// wyswietlanie elementow tablicy
 
 	for (int i = 0; i < n; ++i)
 	{
-		int a = rand();
-		cout << a << endl;
+		cout << tab[i] << " ";
 	}
 
-
-
 	// zmieniam jeden z elementow i wyswietlam go
-	//tab[0] = 123124;
+	tab[0] = 123124;
 
-	//cout << tab[0];
+	cout << tab[0];
 
 	return 0;
 }
